@@ -59,7 +59,7 @@ public class RunnerClass
         player.play();
         Dealer dealer = new Dealer();
         dealer.distribute();
-        System.out.println("==============");
+        System.out.println("=============");
 
         Diver diver = new Diver();
         diver.collect();
