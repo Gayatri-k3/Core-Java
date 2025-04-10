@@ -1,6 +1,6 @@
 package com.xworkz.aquiredsecond.internal;
 
-public class Festival {
+public class  Festival {
     public Festival() {
         System.out.println("no-arg const of Festival");
     }
