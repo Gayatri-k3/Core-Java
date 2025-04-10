@@ -1,5 +1,6 @@
 package com.xworkz.aquiredsecond.external;
 
+import com.xworkz.aquiredsecond.internal.Accessory;
 import com.xworkz.aquiredsecond.internal.Footwear;
 
 public class Sneakers extends Footwear {
