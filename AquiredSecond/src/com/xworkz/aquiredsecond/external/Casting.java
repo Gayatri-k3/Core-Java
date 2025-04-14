@@ -1009,5 +1009,466 @@ public class Casting {
             System.err.println("Holiday is null..");
         }
     }
-
+    public void cNeighbor(Neighbor neighbor)
+    {
+        if(neighbor != null) {
+            neighbor.greet();
+            if(neighbor instanceof NextDoorNeighbor) {
+                NextDoorNeighbor next = (NextDoorNeighbor) neighbor;
+                next.borrowSugar();
+            }
+            else{
+                System.err.println("Neighbor is not NextDoorNeighbor");
+            }
+        }
+        else{
+            System.err.println("Neighbor is null..");
+        }
+    }
+    public void cSong(Song song)
+    {
+        if(song != null) {
+            song.sing();
+            if(song instanceof NurserySong) {
+                NurserySong nursery = (NurserySong) song;
+                nursery.teachAlphabet();
+            }
+            else{
+                System.err.println("Song is not NurserySong");
+            }
+        }
+        else{
+            System.err.println("Song is null..");
+        }
+    }
+    public void cMeeting(Meeting meeting)
+    {
+        if(meeting != null) {
+            meeting.schedule();
+            if(meeting instanceof OfficeMeeting) {
+                OfficeMeeting office = (OfficeMeeting) meeting;
+                office.discussAgenda();
+            }
+            else{
+                System.err.println("Meeting is not OfficeMeeting");
+            }
+        }
+        else{
+            System.err.println("Meeting is null..");
+        }
+    }
+    public void cCraft(Craft craft)
+    {
+        if(craft != null) {
+            craft.create();
+            if(craft instanceof PaperBoat) {
+                PaperBoat paperBoat = (PaperBoat) craft;
+                paperBoat.floatInWater();
+            }
+            else{
+                System.err.println("Craft is not PaperBoat");
+            }
+        }
+        else{
+            System.err.println("Craft is null..");
+        }
+    }
+    public void cPlace(Place place)
+    {
+        if(place != null) {
+            place.visit();
+            if(place instanceof Park) {
+                Park park = (Park) place;
+                park.play();
+            }
+            else {
+                System.err.println("Place is not Park");
+            }
+        }
+        else {
+            System.err.println("Place is null..");
+        }
+    }
+    public void cBird(Bird bird)
+    {
+        if(bird != null) {
+            bird.fly();
+            if(bird instanceof Parrot) {
+                Parrot parrot = (Parrot) bird;
+                parrot.mimic();
+            }
+            else {
+                System.err.println("Bird is not Parrot");
+            }
+        }
+        else {
+            System.err.println("Bird is null..");
+        }
+    }
+    public void cFood(Food food)
+    {
+        if(food != null) {
+            food.prepare();
+            if(food instanceof Pizza) {
+                Pizza pizza = (Pizza) food;
+                pizza.bake();
+            }
+            else {
+                System.err.println("Food is not Pizza");
+            }
+        }
+        else {
+            System.err.println("Food is null..");
+        }
+    }
+    public void cComputerComponent(ComputerComponent component)
+    {
+        if(component != null) {
+            component.work();
+            if(component instanceof Processor) {
+                Processor processor = (Processor) component;
+                processor.compute();
+            }
+            else {
+                System.err.println("Component is not Processor");
+            }
+        }
+        else {
+            System.err.println("Component is null..");
+        }
+    }
+    public void cWeather(Weather weather)
+    {
+        if(weather != null) {
+            weather.change();
+            if(weather instanceof RainyWeather) {
+                RainyWeather rainyWeather = (RainyWeather) weather;
+                rainyWeather.pourRain();
+            }
+            else {
+                System.err.println("Weather is not RainyWeather");
+            }
+        }
+        else {
+            System.err.println("Weather is null..");
+        }
+    }
+    public void cGrain(Grain grain)
+    {
+        if(grain != null) {
+            grain.harvest();
+            if(grain instanceof Rice) {
+                Rice rice = (Rice) grain;
+                rice.cook();
+            }
+            else {
+                System.err.println("Grain is not Rice");
+            }
+        }
+        else {
+            System.err.println("Grain is null..");
+        }
+    }
+    public void cPlant(Plant plant)
+    {
+        if(plant != null) {
+            plant.grow();
+            if(plant instanceof RosePlant) {
+                RosePlant rosePlant = (RosePlant) plant;
+                rosePlant.bloom();
+            }
+            else {
+                System.err.println("Plant is not a RosePlant");
+            }
+        }
+        else {
+            System.err.println("Plant is null..");
+        }
+    }
+    public void cTrain(Athlete athlete)
+    {
+        if(athlete != null) {
+            athlete.train();
+            if(athlete instanceof RunnerA) {
+                RunnerA runnerA = (RunnerA) athlete;
+                runnerA.sprint();
+            }
+            else {
+                System.err.println("Athlete is not a RunnerA");
+            }
+        }
+        else {
+            System.err.println("Athlete is null..");
+        }
+    }
+    public void wearFootwear(Accessory accessory) {
+        if(accessory != null) {
+            accessory.protectFeet();
+            if(accessory instanceof Sandal) {
+                Sandal sandal = (Sandal) accessory;
+                sandal.gripSurface();
+            }
+            else {
+                System.err.println("Accessory is not a Sandal");
+            }
+        }
+        else {
+            System.err.println("Accessory is null..");
+        }
+    }
+    public void wearCloth(Cloth cloth) {
+        if(cloth != null) {
+            cloth.wear();
+            if(cloth instanceof Shirt) {
+                Shirt shirt = (Shirt) cloth;
+                shirt.buttonUp();
+            }
+            else {
+                System.err.println("Cloth is not a Shirt");
+            }
+        }
+        else {
+            System.err.println("Cloth is null..");
+        }
+    }
+    public void useDevice(Device device) {
+        if(device != null) {
+            device.powerOn();
+            if(device instanceof Smartphone) {
+                Smartphone smartphone = (Smartphone) device;
+                smartphone.installApp();
+            }
+            else {
+                System.err.println("Device is not a Smartphone");
+            }
+        }
+        else {
+            System.err.println("Device is null..");
+        }
+    }
+    public void useFootwear(Footwear footwear) {
+        if(footwear != null) {
+            footwear.wear();
+            if(footwear instanceof Sneakers) {
+                Sneakers sneakers = (Sneakers) footwear;
+                sneakers.tieLaces();
+            }
+            else {
+                System.err.println("Footwear is not Sneakers");
+            }
+        }
+        else {
+            System.err.println("Footwear is null..");
+        }
+    }
+    public void useUtensil(Utensil utensil) {
+        if(utensil != null) {
+            utensil.holdFood();
+            if(utensil instanceof Spoon) {
+                Spoon spoon = (Spoon) utensil;
+                spoon.scoop();
+            }
+            else {
+                System.err.println("Utensil is not a Spoon");
+            }
+        }
+        else {
+            System.err.println("Utensil is null..");
+        }
+    }
+    public void handleBook(Book book) {
+        if (book != null) {
+            book.open();  // Calling the method from the superclass
+            if (book instanceof StoryBook) {
+                StoryBook storyBook = (StoryBook) book;
+                storyBook.readStory();  // Calling subclass-specific method
+            } else {
+                System.err.println("This is not a StoryBook");
+            }
+        } else {
+            System.err.println("Book is null..");
+        }
+    }
+    public void handleFlower(Flower flower) {
+        if (flower != null) {
+            flower.bloom();  // Calls the method from Flower class
+            if (flower instanceof Sunflower) {
+                Sunflower sunflower = (Sunflower) flower;
+                sunflower.faceSun();  // Calls the Sunflower-specific method
+            } else {
+                System.err.println("This is not a Sunflower");
+            }
+        } else {
+            System.err.println("Flower is null..");
+        }
+    }
+    public void handleCostume(Costume costume) {
+        if (costume != null) {
+            costume.wear();
+            if (costume instanceof SuperheroCostume) {
+                SuperheroCostume superheroCostume = (SuperheroCostume) costume;
+                superheroCostume.saveWorld();
+            } else {
+                System.err.println("This is not a SuperheroCostume");
+            }
+        } else {
+            System.err.println("Costume is null..");
+        }
+    }
+    public void cDrink(Beverage beverage) {
+        if (beverage != null) {
+            beverage.drink();
+            if (beverage instanceof Tea) {
+                Tea tea = (Tea) beverage;
+                tea.addMilk();
+            } else {
+                System.err.println("Beverage is not Tea");
+            }
+        } else {
+            System.err.println("Beverage is null...");
+        }
+    }
+    public void cDisplay(Toy toy) {
+        if (toy != null) {
+            toy.display();
+            if (toy instanceof TeddyBear) {
+                TeddyBear teddyBear = (TeddyBear) toy;
+                teddyBear.hug();
+            } else {
+                System.err.println("Toy is not TeddyBear");
+            }
+        } else {
+            System.err.println("Toy is null...");
+        }
+    }
+    public void cRoamFreely(WildAnimal wildAnimal) {
+        if (wildAnimal != null) {
+            wildAnimal.roamFreely();
+            if (wildAnimal instanceof Tiger) {
+                Tiger tiger = (Tiger) wildAnimal;
+                tiger.roar();
+            } else {
+                System.err.println("WildAnimal is not Tiger");
+            }
+        } else {
+            System.err.println("WildAnimal is null...");
+        }
+    }
+    public void cEntertain(Cartoon cartoon) {
+        if (cartoon != null) {
+            cartoon.entertain();
+            if (cartoon instanceof TomAndJerry) {
+                TomAndJerry tomAndJerry = (TomAndJerry) cartoon;
+                tomAndJerry.chase();
+            } else {
+                System.err.println("Cartoon is not TomAndJerry");
+            }
+        } else {
+            System.err.println("Cartoon is null...");
+        }
+    }
+    public void cAddFlavor(Spice spice) {
+        if (spice != null) {
+            spice.addFlavor();
+            if (spice instanceof Turmeric) {
+                Turmeric turmeric = (Turmeric) spice;
+                turmeric.heal();
+            } else {
+                System.err.println("Spice is not Turmeric");
+            }
+        } else {
+            System.err.println("Spice is null...");
+        }
+    }
+    public void cRecite(Rhyme rhyme) {
+        if (rhyme != null) {
+            rhyme.recite();
+            if (rhyme instanceof TwinkleTwinkle) {
+                TwinkleTwinkle twinkleTwinkle = (TwinkleTwinkle) rhyme;
+                twinkleTwinkle.teachStars();
+            } else {
+                System.err.println("Rhyme is not TwinkleTwinkle");
+            }
+        } else {
+            System.err.println("Rhyme is null...");
+        }
+    }
+    public void cLocate(Area area) {
+        if (area != null) {
+            area.locate();
+            if (area instanceof Village) {
+                Village village = (Village) area;
+                village.growCrops();
+            } else {
+                System.err.println("Area is not Village");
+            }
+        } else {
+            System.err.println("Area is null...");
+        }
+    }
+    public void cStart(Appliance appliance) {
+        if (appliance != null) {
+            appliance.start();
+            if (appliance instanceof WashingMachine) {
+                WashingMachine washingMachine = (WashingMachine) appliance;
+                washingMachine.washClothes();
+            } else {
+                System.err.println("Appliance is not WashingMachine");
+            }
+        } else {
+            System.err.println("Appliance is null...");
+        }
+    }
+    public void cSustainLife(NaturalResource resource) {
+        if (resource != null) {
+            resource.sustainLife();
+            if (resource instanceof Water) {
+                Water water = (Water) resource;
+                water.hydrate();
+            } else {
+                System.err.println("Resource is not Water");
+            }
+        } else {
+            System.err.println("Resource is null...");
+        }
+    }
+    public void cOrganize(Event event) {
+        if (event != null) {
+            event.organize();
+            if (event instanceof Wedding) {
+                Wedding wedding = (Wedding) event;
+                wedding.exchangeVows();
+            } else {
+                System.err.println("Event is not Wedding");
+            }
+        } else {
+            System.err.println("Event is null...");
+        }
+    }
+    public void cLove(Spouse spouse) {
+        if (spouse != null) {
+            spouse.love();
+            if (spouse instanceof Wife) {
+                Wife wife = (Wife) spouse;
+                wife.cookMeal();
+            } else {
+                System.err.println("Spouse is not Wife");
+            }
+        } else {
+            System.err.println("Spouse is null...");
+        }
+    }
+    public void cStart(Season season) {
+        if (season != null) {
+            season.start();
+            if (season instanceof Winter) {
+                Winter winter = (Winter) season;
+                winter.snow();
+            } else {
+                System.err.println("Season is not Winter");
+            }
+        } else {
+            System.err.println("Season is null...");
+        }
+    }
 }
