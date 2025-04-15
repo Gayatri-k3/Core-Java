@@ -23,13 +23,14 @@ public class string {
         for (int i = arr.length - 1; i >= 0; i--) {
             System.out.print(arr[i]);
         }
-        System.out.println();
     }
 
     public static void countWords() {
+        System.out.println();
         String[] words = s.split(" ");
         System.out.println("Number of words: " + words.length);
     }
+
     public static void target(char target){
         char[] arr1 = s.toCharArray();
         boolean isPresent = false;
@@ -44,11 +45,13 @@ public class string {
             System.out.println("Target is not present");
         }
     }
+
     public static void sentChars(){
         String s1 = "Hi this is Gayatri";
         int len = s1.length();
         System.out.println("Number of characters in this sentence are: "+len);
     }
+
     public static void space() {
         String s1 = "Hi this is Gayatri";
         char[] arr1 = s1.toCharArray();
@@ -60,11 +63,13 @@ public class string {
         }
         System.out.println("Number of spaces in this sentence are: "+count);
     }
+
     public static void space1() {
         String s1 = "Hi this is Gayatri";
         String updatedS = s1.replace(" ", "%");
         System.out.println("Updated sentence: " + updatedS);
     }
+
     public static void freq(){
         String s1 = "Hi this is Gayatri and this is a sentence";
         String[] arr1 = s1.split(" ");
@@ -89,6 +94,7 @@ public class string {
             }
         }
     }
+
     public static void freqChar(){
         String s1 = "Hi this is Gayatri and this is a sentence";
         char[] arr1 = s1.toCharArray();
@@ -113,8 +119,16 @@ public class string {
             }
         }
     }
-    public static void pali(){
-        String s1 = "Gayatri";
-        String s2 = reverse(s1);
+    public static void pali(String s) {
+        char[] arr = s.toCharArray();
+        String reversed = "";
+        for (int i = arr.length - 1; i >= 0; i--) {
+            reversed += arr[i] + "";
+        }
+        if (reversed.equals(s)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
     }
 }

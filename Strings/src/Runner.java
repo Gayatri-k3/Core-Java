@@ -1,7 +1,5 @@
 import com.xworkz.string.internal.string;
 
-import java.sql.SQLOutput;
-
 public class Runner {
     public static void main(String[] args) {
         string.hello();
@@ -13,6 +11,7 @@ public class Runner {
         string.space1();
         string.freq();
         string.freqChar();
+        string.pali("Gayatri");
     }
 }
 
